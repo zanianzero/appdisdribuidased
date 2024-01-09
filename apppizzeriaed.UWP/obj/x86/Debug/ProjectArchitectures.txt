@@ -1,0 +1,1 @@
+C:\apps distribuidas proyecto app\apppizzeriaed\apppizzeriaed.UWP\apppizzeriaed.UWP.csproj;x86

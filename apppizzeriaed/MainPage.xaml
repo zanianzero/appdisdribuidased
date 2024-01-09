@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apppizzeriaed.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="5" CornerRadius="0">
+            <Label Text="App Movil Edwin Cadena" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+        </Frame>
+        <Label x:Name="lblTexto"  Text="DATOS DE RESTAURANTES" FontSize="10" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,0,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text=""/>
+                        <Span Text="" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <ListView  Grid.Row="1" x:Name="listaRestaurantes" Margin="30,0,30,0" VerticalOptions="FillAndExpand"></ListView>
+
+        <ListView FontSize
+        <Entry x:Name="txtDato" IsPassword="False" TextChanged="txtDato_TextChanged" Margin="50,10,50,0" Placeholder="INSERTE UN ID DE RESTAURANTE"></Entry>
+       
+        
+        <Button Text="listar todos" Clicked="Button_Clicked_1"></Button>
+        <Button Text="Leer UNO!!" Clicked="cmdReadOne_Clicked"></Button>
+        <Entry x:Name="txtNombre" Margin="50,0,50,0" Placeholder="Nombre Restaurante"></Entry>
+        <Entry x:Name="txtDireccion" Margin="50,0,50,0" Placeholder="Direccion Restaurante"></Entry>
+        <Entry x:Name="txtTelefono" Margin="50,0,50,0" Placeholder="Telefono Restaurante"></Entry>
+        <Entry x:Name="txtEspecialidad" Margin="50,0,50,0" Placeholder="Especialidad Restaurante"></Entry>
+        
+        <Button Text="EDITAR" Clicked="Button_Clicked_2" Margin="50,0,50,0"/>
+        <Button Text="ACTUALIZAR" Clicked="cmdUpdate_Clicked" Margin="50,0,50,0"/>
+        <Button Text="ELIMINAR" Clicked="cmdDelete_Clicked" Margin="50,0,50,0"/>
+        <Button Text="INSERTAR" Clicked="cmdInsert_Clicked" Margin="50,0,50,1" ></Button>
+
+        
+    </StackLayout>
+
+</ContentPage>
